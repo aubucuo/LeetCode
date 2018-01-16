@@ -29,9 +29,12 @@ def _getpic(path): #获得文件夹pic
         _uploadpic(savepath,name)
         piclink.append("自己的七牛域名"+name)
     #写入文件外链
-    with open('F:/tinipic/aalink.txt','w') as f: #加个aa 可以显示在文件夹前面，容易看到
+    with open('F:/tinipic/aalink.txt','a') as f: #加个aa 可以显示在文件夹前面，容易看到
+        n = 0
         for i in piclink:
             f.write(i)
+            n += 1
+        f.write("本次%d张图片.END"%n)
         f.close()
         
 def _tinipic(largepic,tinipic):
