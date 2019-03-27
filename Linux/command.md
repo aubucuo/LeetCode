@@ -13,3 +13,11 @@
 
 #### touch
 `touch file_name` 如果文件已经存在，会修改文件的时间戳属性。
+
+### 链接文件
+相当于windows里的快捷方式，是一个指向另一个文件的链接。
+`ln -S [file_path] [link_name]`原文件删除后，称链接文件断裂了。
+#### 硬链接 和 符号链接
+
+![](https://pic.superbed.cn/item/5c9b751f3a213b0417379cf0)
+
